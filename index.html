@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator | web</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="calcLogo.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body onload="fix()">
+    <h1>Calculator</h1>
+    <div class="calc-holder">
+        <div class="clac">
+            <input type="text" class="display-calc" readonly>
+            <span class="clear-btn" onclick="input('c')">C</span>
+            <span class="operator-btn" onclick="input('/')">/</span>
+            <span class="operator-btn" onclick="input('*')">*</span>
+            <span class="num-btn" onclick="input(7)">7</span>
+            <span class="num-btn" onclick="input(8)">8</span>
+            <span class="num-btn" onclick="input(9)">9</span>
+            <span class="operator-btn" onclick="input('-')">-</span>
+            <span class="num-btn" onclick="input(4)">4</span>
+            <span class="num-btn" onclick="input(5)">5</span>
+            <span class="num-btn" onclick="input(6)">6</span>
+            <span class="plus-btn operator-btn" onclick="input('+')">+</span>
+            <span class="num-btn" onclick="input(1)">1</span>
+            <span class="num-btn" onclick="input(2)">2</span>
+            <span class="num-btn" onclick="input(3)">3</span>
+            <span class="num-btn" onclick="input(0)">0</span>
+            <span class="num-btn" onclick="input('00')">00</span>
+            <span class="decimal-btn" onclick="input('.')">.</span>
+            <span class="equal-btn" onclick="input('=')">=</span>
+        </div>
+    </div>
+</body>
+
+</html>

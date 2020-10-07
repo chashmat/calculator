@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+    cursor: default;
+    transition: all 0.25s;
+}
+
+*::selection {
+    background: transparent;
+}
+
+body {
+    background: #091921;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 22px;
+}
+
+.calc-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 65px;
+}
+
+.clac {
+    position: relative;
+    display: grid;
+    border: 4px outset #142c38;
+}
+
+.clac input {
+    grid-column: span 4;
+    height: 100px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.clac input::selection {
+    background-color: #499dfd;
+}
+
+.clac span {
+    display: grid;
+    width: 70px;
+    height: 70px;
+    color: #fff;
+    background: #0c2835;
+    place-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.clac span:active {
+    color: #111;
+}
+
+.clac .operator-btn:active {
+    background-color: #FFC107;
+}
+
+.clac .num-btn:active {
+    background-color: #74ff3b;
+}
+
+.clac .clear-btn:active {
+    background-color: #FB8C00;
+}
+
+.clac .equal-btn:active {
+    background-color: #03A9F4;
+}
+
+.clac .decimal-btn:active {
+    background-color: #091921;
+    color: #fff;
+}
+
+.clac .clear-btn {
+    grid-column: span 2;
+    width: 140px;
+    background: #ff3077;
+}
+
+.clac .plus-btn {
+    grid-row: span 2;
+    height: 140px;
+}
+
+.clac .equal-btn {
+    background: #2196f3;
+}
