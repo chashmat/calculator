@@ -32,7 +32,8 @@ h1 {
 .clac {
     position: relative;
     display: grid;
-    border: 4px outset #142c38;
+    border: 2px solid #142c38;
+    box-shadow: 1pc 1pc 15px 2px #0000007d;
 }
 
 .clac input {
